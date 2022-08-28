@@ -6,6 +6,8 @@ from glob import glob
 # name of folder that you would like to gather all data stored in it
 FOLDER_NAME = 'Gathered_data'
 
+if not os.path.exists(FOLDER_NAME):
+    os.makedirs(FOLDER_NAME)
 
 
 # A list of all joined files is returned
