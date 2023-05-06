@@ -136,10 +136,3 @@ def get_main_category(df):
     df['main category'] = df['category'].str.split('+').str[0].str.strip().map(d)
     
     return df
-
-
-    
-def get_master_category(df):
-    
-    df['main category'] = df['category'].str.split('+').str[0].str.strip().map(d)
-    
